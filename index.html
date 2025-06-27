@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="outer">
         <header>
@@ -13,26 +15,128 @@
                 <div id="Logo">
                     <h2>Yer Nails</h2>
                 </div>
-                <div id="navmenu">
-                    <a href="Inicio.html"><H3>Inicio</H3></a>
-                    <a href="Nosotros.html"><H3>Nosotros</H3></a>
-                    <a href="Blog.html"><H3>Blogs</H3></a>
-                    <a href="Contacto.html"><H3>Contacto</H3></a>
-                    <a href="PreguntasFrecuentes.html"><H3>Preguntas Frecuentes</H3></a>
-                    <a href="AcercaDe.html"><H3>Acerca de</H3></a>
+
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
                 </div>
+
+                <div id="navmenu">
+                    <a href="Inicio.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                    <a href="AcercaDe.html">
+                        <h3>Acerca de</h3>
+                    </a>
+                </div>
+
                 <div id="espaciador"></div>
             </nav>
+
         </header>
 
         <main>
-            <div id="logo">
-                <img src="./img/Logo.jpg" alt="Logo de Yer Nails">
-            </div>
-            <div id="desc">
-                <img src="./img/Gradient.png" alt="">
+            <div class="container">
+                <!-- Sección principal superior -->
+                <div class="top">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <img src="./img/Logo.jpg" alt="Yer Nails">
+                    </div>
+
+                    <!-- CUADRO INFO -->
+                    <div class="card-info">
+                        <div class="gradient">
+                            <img src="./img/Gradient.png" alt="Gradient">
+                        </div>
+                        <div class="info">
+                            <p class="subtitulo">Manicurista profesional</p>
+                            <h2>Salón de <br>uñas <br>privado</h2>
+                            <button>Conoce sobre mí 💞</button>
+                        </div>
+                    </div>
+
+                    <!-- COLUMNA DERECHA: Kitty y Redes -->
+                    <div class="lateral-derecha">
+                        <div class="card-img">
+                            <img src="img/kitty.png" alt="Hello Kitty">
+                        </div>
+                        <div class="card-redes">
+                            <p>Redes sociales</p>
+                            <div class="iconos">
+                                <img src="img/instagram.png" alt="Instagram">
+                                <img src="img/whatsapp.png" alt="WhatsApp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicios -->
+                <div class="servicios">
+                    <h2>Nuestros servicios</h2>
+                    <div class="servicios-lista">
+                        <ul class="izq">
+                            <li>🌸 Gel X</li>
+                            <li>🌸 Gel calcio</li>
+                            <li>🌸 Rubber base</li>
+                        </ul>
+                        <ul class="der">
+                            <li>✨ Esmaltado semipermanente</li>
+                            <li>✨ Manicura tradicional</li>
+                            <li>✨ ¡Entre otros!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Identidad -->
+                <div class="identidad">
+                    <h2>Nuestra identidad</h2>
+                    <div class="identidad-contenido">
+                        <img src="./img/kitty1.png" alt="Hello Kitty bailarina">
+                        <div class="textos">
+                            <div class="mision">
+                                <h3>Mi misión 🤍</h3>
+                                <br>
+                                <p>Es poder seguir trabajando en lo que amo, en lo que me hace feliz.</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="vision">
+                                <h3>Mi proyecto a futuro 🩷</h3>
+                                <br>
+                                <p>Es abrir un local y poder darles trabajo a otras mujeres para que puedan trabajar
+                                    en lo que aman hacer.</p>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
