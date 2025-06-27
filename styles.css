@@ -217,13 +217,14 @@ body {
 
 /* --------- SERVICIOS --------- */
 .servicios {
+    margin: 10px;
     margin-top: 40px;
-    text-align: center;
+    text-align: left;
 }
 
 .servicios h2 {
     color: #8b2c5d;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
     font-family: 'Abibas', sans-serif;
 }
@@ -232,7 +233,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    gap: 20px;
+    gap: 0;
     flex-wrap: wrap;
 }
 
@@ -245,6 +246,9 @@ body {
 
 .servicios-lista .izq li {
     background: white;
+    font-family: 'medulaone', sans-serif;
+    width: 20em;
+    font-size: 30px;
     border-radius: 15px;
     padding: 10px 15px;
     margin-bottom: 10px;
@@ -255,10 +259,14 @@ body {
 
 .servicios-lista .der li {
     background: linear-gradient(to right, #b24d7b, #e6b0cf);
+    font-family: 'medulaone', sans-serif;
+    font-size: 30px;
+    width: 21.8em;
     border-radius: 20px;
     padding: 10px 15px;
     color: white;
     margin-bottom: 10px;
+    margin-left: -7em;
     font-weight: bold;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
