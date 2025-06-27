@@ -310,7 +310,7 @@ body {
     margin-bottom: 10px;
 }
 
-.textos .mision h3{
+.textos .mision h3 {
     color: white;
 }
 
@@ -370,11 +370,46 @@ body {
         align-self: center;
     }
 
+    .card-redes {
+        background: linear-gradient(to right, #b24d7b, #e6b0cf);
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
     .servicios-lista {
         flex-direction: column;
         align-items: center;
-        max-width: fit-content;
     }
+
+    .servicios-lista .izq li {
+        background: white;
+        font-family: 'medulaone', sans-serif;
+        width: 13em;
+        font-size: 30px;
+        border-radius: 15px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #6d2245;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .servicios-lista .der li {
+        background: linear-gradient(to right, #b24d7b, #e6b0cf);
+        font-family: 'medulaone', sans-serif;
+        font-size: 30px;
+        width: 13em;
+        margin-left: 0.02em;
+        border-radius: 20px;
+        padding: 10px 15px;
+        color: white;
+        margin-bottom: 10px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
 
     .identidad-contenido {
         flex-direction: column;
