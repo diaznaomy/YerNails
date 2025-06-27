@@ -48,8 +48,7 @@ a {
 }
 
 #menu h3 {
-    color: white;
-    opacity: 1;
+    color: #A55166;
 }
 
 #Logo {
@@ -104,6 +103,10 @@ a {
         display: none;
         width: 60%;
         max-width: 250px;
+    }
+
+    #menu h3 {
+        color: white;
     }
 
     #navmenu.active {
