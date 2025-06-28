@@ -159,21 +159,19 @@ body {
 /*Ahora si puede cambiar*/
 /* ------------------- */
 
+/* Estilos base */
 main h2 {
     margin: 2em;
 }
 
 h4 {
     font-family: 'medulaone', sans-serif;
-    font-size: 4em;
     font-weight: bold;
-    text-align: right;
     color: white;
 }
 
 h5 {
     font-family: 'medulaone', sans-serif;
-    font-size: 2em;
     color: white;
     text-align: left;
     margin-left: 1em;
@@ -181,68 +179,229 @@ h5 {
 
 p {
     font-family: 'medulaone', sans-serif;
-    font-size: 1.74em;
     color: white;
     line-height: 1.7em;
-    margin-left: 12em;
-    margin-top: -3.2em;
+}
+
+.Nao-card, .Ney-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 2.5em;
+    margin: 1.4em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Nao-card {
     background-color: #d38c9d;
-    display: flex;
-    flex-direction: column;
-    max-width: 90em;
-    max-height: 50em;
-    border-radius: 1em;
-    padding: 2.5em;
-    margin: 1.4em;
     margin-top: 10em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.Nao-card h4 {
-    text-align: left;
-    margin-left: 5em;
-    margin-top: -1em;
-}
-
-.fotoNao {
-    max-width: 22em;
-    margin-top: -17em;
-}
-
-.kuromi{
-    margin-left: 56em;
-    margin-top: -30em;
 }
 
 .Ney-card {
     background-color: #a35065;
-    display: flex;
-    flex-direction: column;
-    max-width: 90em;
-    max-height: 50em;
-    border-radius: 1em;
-    padding: 2.5em;
-    margin: 1.4em;
     margin-top: 8.5em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.Ney-card h4 {
-    text-align: right;
-    margin-right: 5em;
-    margin-top: -2em;
+.kuromi {
+    width: auto; /* o un valor por defecto */
+    height: auto;
+    max-width: 100%; /* para mantener la responsividad */
 }
 
-.fotoNey {
-    max-width: 22em;
-    margin-top: -17em;
-    margin-left: 52em;
+/* Estilos para dispositivos grandes (escritorio) */
+@media (min-width: 992px) {
+    h4 {
+        font-size: 4em;
+        text-align: right;
+    }
+    
+    h5 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.74em;
+        margin-left: 12em;
+        margin-top: -3.2em;
+    }
+    
+    .Nao-card, .Ney-card {
+        max-width: 90em;
+        max-height: 50em;
+    }
+    
+    .Nao-card h4 {
+        text-align: left;
+        margin-left: 5em;
+        margin-top: -1em;
+    }
+    
+    .fotoNao {
+        max-width: 22em;
+        margin-top: -17em;
+    }
+    
+    .kuromi {
+        margin-left: 56em;
+        margin-top: -30em;
+    }
+    
+    .Ney-card h4 {
+        text-align: right;
+        margin-right: 5em;
+        margin-top: -2em;
+    }
+    
+    .fotoNey {
+        max-width: 22em;
+        margin-top: -17em;
+        margin-left: 52em;
+    }
+    
+    .chococat {
+        margin-left: -3em;
+        margin-top: -35em;
+    }
 }
 
-.chococat {
-    margin-left: -3em;
-    margin-top: -35em;
+/* Estilos para tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+    h4 {
+        font-size: 3em;
+    }
+    
+    h5 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.3em;
+        margin-left: 8em;
+        margin-top: -2.5em;
+    }
+    
+    .fotoNao, .fotoNey {
+        max-width: 18em;
+        margin-top: -14em;
+    }
+    
+    .kuromi {
+        max-width: 12em;
+        margin-left: 40em;
+        margin-top: -25em;
+    }
+    
+    .fotoNey {
+        margin-left: 40em;
+    }
+    
+    .chococat {
+        margin-left: -2em;
+        margin-top: -28em;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+    main h2 {
+        margin: 1em;
+    }
+    
+    .Nao-card{
+        padding: 1.5em;
+        margin: 1em 0.5em;
+        margin-top: 12em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Ney-card {
+        padding: 1.5em;
+        margin: 1em 0.5em;
+        margin-top: 8.5em;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fotoNao {
+        margin-top: -15em;
+        margin-left: -25em;
+    }
+
+    .fotoNey {
+        margin-top: -15em;
+        align-self: right !important;
+        margin-right: -25em;
+    }
+
+    .fotoNao img {
+        width: 15em;    
+    }
+
+    .fotoNey img {
+        width: 15em;
+    }
+
+    .kuromi {
+        align-self: right;
+        margin-left: 30em;
+        margin-top: -20em;
+    }
+
+    .chococat {
+        margin-left: -2em;
+        margin-top: -27em;
+    }
+
+    .kuromi img{
+        width: 14em;
+    }
+
+    .chococat img{
+        width: 14em;
+    }
+    
+    .Nao-card h4{
+        text-align: left !important;
+        font-size: 3em !important;
+        margin-left: 2em !important;
+        margin-top: -1.5em !important;
+    }
+
+    .Ney-card h4{
+        text-align: right !important;
+        font-size: 3em !important;
+        margin-right: 5.3em !important;
+        margin-top: -1.5em !important;
+    }
+
+    .Nao-card h5{
+        text-align: left !important;
+        font-size: 1.6em !important;
+        margin-left: -12em !important;
+        margin-top: -1em !important;
+    }
+
+    .Ney-card h5{
+        text-align: right !important;
+        font-size: 1.6em !important;
+        margin-right: 2em !important;
+        margin-top: -1em !important;
+    }
+
+    .Nao-card p{
+        text-align: justify !important;
+        font-size: 1.5em !important;
+        margin-right: 2em !important;
+        margin-left: 2em !important;
+        margin-top: 1em !important;
+    }
+
+    .Ney-card p{
+        text-align: justify !important;
+        font-size: 1.5em !important;
+        margin-right: 2em !important;
+        margin-left: 2em !important;
+        margin-top: 1em !important;
+    }
 }
