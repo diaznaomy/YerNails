@@ -13,26 +13,29 @@
         <header>
             <nav id="menu">
                 <div id="Logo">
-                    <h2>Year Nail</h2>
+                    <h2>Yer Nails</h2>
+                </div>
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
                 </div>
                 <div id="navmenu">
-                    <a href="Inicio.html">
-                        <H3>Inicio</H3>
+                    <a href="index.html">
+                        <h3>Inicio</h3>
                     </a>
                     <a href="Nosotros.html">
-                        <H3>Nosotros</H3>
+                        <h3>Nosotros</h3>
                     </a>
                     <a href="Blog.html">
-                        <H3>Blogs</H3>
+                        <h3>Blogs</h3>
                     </a>
                     <a href="Contacto.html">
-                        <H3>Contacto</H3>
+                        <h3>Contacto</h3>
                     </a>
                     <a href="PreguntasFrecuentes.html">
-                        <H3>Preguntas Frecuentes</H3>
+                        <h3>Preguntas Frecuentes</h3>
                     </a>
                     <a href="AcercaDe.html">
-                        <H3>Acerca de</H3>
+                        <h3>Acerca de</h3>
                     </a>
                 </div>
                 <div id="espaciador"></div>
@@ -126,11 +129,20 @@
                 <h3>Year Nails</h3>
             </div>
         </div>
-        <div id="Ubicación">
+        <div id="Ubicacion">
             <h2>Ubicación</h2>
             <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
         </div>
     </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
