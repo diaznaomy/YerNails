@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="outer">
+        <header>
+            <nav id="menu">
+                <div id="Logo">
+                    <h2>Yer Nails</h2>
+                </div>
+
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
+                </div>
+
+                <div id="navmenu">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                    <a href="acercade.html">
+                        <h3>Acerca de</h3>
+                    </a>
+                </div>
+
+                <div id="espaciador"></div>
+            </nav>
+
+        </header>
+
+        <main>
+            <div class="identidad">
+                <h2>Nuestra identidad</h2>
+                <div class="identidad-contenido">
+                    <img src="./img/kitty1.png" alt="Hello Kitty bailarina">
+                    <div class="textos">
+                        <div class="mision">
+                            <h3>Mi misión 🤍</h3>
+                            <br>
+                            <p>Es poder seguir trabajando en lo que amo, en lo que me hace feliz.</p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="vision">
+                            <h3>Mi proyecto a futuro 🩷</h3>
+                            <br>
+                            <p>Es abrir un local y poder darles trabajo a otras mujeres para que puedan trabajar
+                                en lo que aman hacer.</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

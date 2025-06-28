@@ -1,0 +1,161 @@
+/* ------------------- */
+/* No cambiar nada */
+/* ------------------- */
+
+body {
+    background-color: #f6dae6;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Abibas';
+    src: url(../Fonts/Abibas.ttf);
+}
+
+@font-face {
+    font-family: 'MedulaOne';
+    src: url(../Fonts/MedulaOne.ttf);
+}
+
+h2 {
+    font-family: 'Abibas', sans-serif;
+    color: #A55166;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'MedulaOne', sans-serif;
+    color: #A55166;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------- */
+/* Menu */
+/* ------------------- */
+
+#menu {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-size: 1em;
+    border-radius: 200px;
+    margin: 20px 20px;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+#menu h3 {
+    color: #A55166;
+}
+
+#Logo {
+    flex: 1;
+    padding-left: 30px;
+}
+
+#navmenu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+#espaciador {
+    flex: 1;
+}
+
+#navmenu a h3 {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navmenu a:hover h3 {
+    color: #FFFFFF;
+    background-color: #A55166;
+}
+
+#burger {
+    display: none;
+    cursor: pointer;
+}
+
+#burger img {
+    width: 50px;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #navmenu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        flex-direction: column;
+        background: linear-gradient(135deg, #E4A0B7, #B75D7A);
+        border-radius: 15px;
+        padding: 15px;
+        display: none;
+        width: 60%;
+        max-width: 250px;
+    }
+
+    #menu h3 {
+        color: white;
+    }
+
+    #navmenu.active {
+        display: flex;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    #espaciador {
+        display: none;
+    }
+}
+
+
+/* ------------------- */
+/* RESPONSIVE STYLE */
+/* ------------------- */
+
+/* --------- RESET --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------- FUENTES --------- */
+@font-face {
+    font-family: 'Abibas';
+    src: url(../Fonts/Abibas.ttf);
+}
+
+@font-face {
+    font-family: 'MedulaOne';
+    src: url(../Fonts/MedulaOne.ttf);
+}
+
+body {
+    background-color: #fde8f0;
+    color: #6d2245;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ------------------- */
+/*Ahora si puede cambiar*/
+/* ------------------- */
+
