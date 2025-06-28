@@ -44,13 +44,6 @@ a {
     letter-spacing: 1px;
 }
 
-select,
-select option {
-    font-family: MedulaOne, sans-serif;
-    font-size: 1em;
-    color: #333;
-}
-
 #menu {
     display: flex;
     align-items: center;
@@ -78,7 +71,6 @@ select option {
     justify-content: center;
     gap: 20px;
     transition: all 0.3s ease;
-    
 }
 
 #navmenu a h3 {
@@ -115,7 +107,6 @@ select option {
         transform: scale(1.02);
     }
 }
-
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -155,99 +146,126 @@ select option {
     box-sizing: border-box;
 }
 
-#ComboBox {
+
+#main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #A55166;
-    font-size: 1em;
-    border-radius: 200px;
-    margin: 30px 10%;
-    max-height: 100px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-#Logo h3 {
-    color: #FFFFFF;
-    font-size: 2em;
-    letter-spacing: 2px;
+#submain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #B75D7A;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1000px;
 }
 
-#Combo {
-    flex: 2;
+#contact {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+    h2{
+        text-decoration: underline;
+    }
+}
+
+.contacto {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    background-color: #E2B4C1;
-    border-radius: 200px;
-    max-height: 100px;
 
     h3 {
-        color: #FFFFFF;
-        font-size: 2em;
-        margin-left: 40px;
+        color: #B75D7A;
+        margin-left: 10px;
         letter-spacing: 1px;
     }
 
     img {
-        width: 50px;
-        height: 50px;
-        background-color: #A55166;
+        width: 40px;
+        height: 40px;
     }
 }
 
-#Categorias {
-    padding: 10px 14em;
-    font-size: 1.2em;
-    margin-left: 20px;
-    border: none;
-    height: 50px;
-    letter-spacing: 2px;
-}
-
-#texto {
-    font-size: 1em;
-    margin: 0px 10%;
-    font-size: 2em;
-    letter-spacing: 2px;
-}
-
-#main {
-    font-size: 1em;
-    border-radius: 200px;
-    margin: 30px 10%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.caja {
-    background-color: #D38C9D;
-    border-radius: 10px;
-    padding: 10px;
-
-    img {
-        width: 100%;
-        height: auto;
-        padding: 5%;
-        border-radius: 30px;
-    }
+.insert {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 
     h3 {
-        font-size: 1.5em;
-        color: #FFFFFF;
-        text-align: center;
-        letter-spacing: 2px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        height: 100%;
+        color: #B75D7A;
+        letter-spacing: 1px;
+    }
+
+    input {
+        margin-top: 5px;
+        height: 30px;
+        width: 100%;
+        border-radius: 10px;
+        border-color: #A55166;
+    }
+
+    select {
+        margin-top: 5px;
+        padding: 7px 30%;
+        border-radius: 16px;
+        border-color: #A55166;
+    }
+
+    textarea {
+        margin-top: 10px;
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        border-color: #A55166;
+    }
+
+    .Rd{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        margin-top: 5px;
+
+        h3{
+            margin-right: 20px;
+            font-size: 1.2em;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
     }
 }
 
-.caja:hover {
-    background-color: #A55166;
-    transition: background-color 0.3s ease;
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
 
-    img {
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
+    h2{
+        text-decoration: underline;
     }
 }
 
@@ -322,94 +340,63 @@ select option {
     }
 }
 
-@media (max-width: 1724px) {
-    #main {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        margin: 25px 8%;
-    }
-
-    #Categorias {
-        padding: 10px 10em;
-        font-size: 1.2em;
-        margin-left: 20px;
-    }
-}
-
-@media (max-width: 1524px) {
-    #Categorias {
-        padding: 10px 7em;
-        font-size: 1.2em;
-        margin-left: 20px;
-    }
-}
-
-@media (max-width: 1224px) {
-    #Categorias {
-        padding: 10px 4em;
-        font-size: 1.2em;
-        margin-left: 20px;
-    }
-}
-
 @media (max-width: 768px) {
-    #main {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin: 20px 5%;
-    }
-
-    #Categorias {
-        padding: 10px auto;
-        font-size: 1em;
-        margin-left: 20px;
-        border-radius: 100px;
-        margin-left: 0px;
-    }
-
-    #Footer{
-        
+    #Footer {
         #Ubicacion {
             flex-direction: column;
             align-items: center;
             text-align: center;
 
-            h2{
+            h2 {
                 font-size: 1.2em;
             }
-            h3{
+
+            h3 {
                 font-size: 1em;
             }
         }
     }
 
-    #Combo {
-        flex-direction: column;
-        align-items: center;
-        background-color: #B75D7A;
-        width: 100%;
-
-        h3{
-            font-size: 2em;
-            margin-left: 0;
-            padding: 0;
-            margin-bottom: 5px;
-        }
-
-        img{
-            display: none;
-        }
+    #main {
+        padding: 15px;
     }
 
-    #ComboBox #Logo {
-        display: none;
+    #submain {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    #contact,
+    #formulario {
+        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
     #main {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin: 15px 5%;
+        padding: 10px;
+    }
+
+    #submain {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #contact,
+    #formulario {
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    #Footer #Ubicacion {
+        h2 {
+            font-size: 1.1em;
+        }
+
+        h3 {
+            font-size: 0.9em;
+        }
     }
 }
