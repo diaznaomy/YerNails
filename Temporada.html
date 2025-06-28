@@ -4,35 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>Experiencias Diseñando Uñas</title>
     <link rel="stylesheet" href="Css/Blog.css">
+    <link rel="icon" href="img/Logo.jpg" type="image/png">
 </head>
 
 <body>
     <div id="outer">
-        <header>
+        <header id="header">
             <nav id="menu">
                 <div id="Logo">
-                    <h2>Year Nail</h2>
+                    <h2>Yer Nails</h2>
+                </div>
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
                 </div>
                 <div id="navmenu">
-                    <a href="Inicio.html">
-                        <H3>Inicio</H3>
+                    <a href="index.html">
+                        <h3>Inicio</h3>
                     </a>
                     <a href="Nosotros.html">
-                        <H3>Nosotros</H3>
+                        <h3>Nosotros</h3>
                     </a>
                     <a href="Blog.html">
-                        <H3>Blogs</H3>
+                        <h3>Blogs</h3>
                     </a>
                     <a href="Contacto.html">
-                        <H3>Contacto</H3>
+                        <h3>Contacto</h3>
                     </a>
                     <a href="PreguntasFrecuentes.html">
-                        <H3>Preguntas Frecuentes</H3>
+                        <h3>Preguntas Frecuentes</h3>
                     </a>
                     <a href="AcercaDe.html">
-                        <H3>Acerca de</H3>
+                        <h3>Acerca de</h3>
                     </a>
                 </div>
                 <div id="espaciador"></div>
@@ -48,8 +52,9 @@
                 <div id="Categoria">
                     <select id="Categorias" onchange="location = this.value;">
                         <option value="Temporada.html">Uñas para Temporada</option>
-                        <option value="Opiniones.html">Opiniones</option>
-                        <option value="Blog.html">Todas las Categorías</option>
+                        <option value="Blog.html">Todos los Artículos</option>
+                        <option value="Experiencias.html">Experiencias Diseñando</option>
+                        <option value="Personalizados.html">Diseños Personalizadoz</option>
                     </select>
                 </div>
                 <img src="Resources/lupa.png" alt="">
@@ -57,30 +62,36 @@
         </nav>
 
         <div id="texto">
-            <h3>Uñas para Temporada</h3>
+            <h3>Todos los artículos</h3>
         </div>
 
         <main id="main">
 
-             <div class="caja">
-                <div id="imagen">
-                    <img src="Resources/FloralRosa.png" alt="Floral">
-                </div>
-                <h3>Un Toque de Magia Rosa – Experiencia con Este Diseño Floral</h3>
+            <div class="caja">
+                <a href="Articulo_TendenciaParaUñasTemporada.html">
+                    <div id="imagen">
+                        <img src="Resources/fresa.jpg" alt="fresa">
+                    </div>
+                    <h3>Tendencias de uñas para esta temporada</h3>
+                </a>
             </div>
 
             <div class="caja">
-                <div id="imagen">
-                    <img src="Resources/HelloKitty.png" alt="HelloKitty">
-                </div>
-                <h3>Uñas con Dulzura – Un Diseño Kawaii y Muy Personalizado</h3>
+                <a href="Articulo_CelebraHalloweenconestosdiseños.html">
+                    <div id="imagen">
+                        <img src="Resources/Halloween.png" alt="Halloween">
+                    </div>
+                    <h3>Celebra Halloween con estos diseños</h3>
+                </a>
             </div>
 
             <div class="caja">
-                <div id="imagen">
-                    <img src="Resources/Barbie.jpeg" alt="Barbie">
-                </div>
-                <h3>Barbiecore Total – Uñas para Brillar</h3>
+                <a href="Articulo_EstilosparaFebreroMariposas.html">
+                    <div id="imagen">
+                        <img src="Resources/Mariposas.png" alt="Mariposas">
+                    </div>
+                    <h3>Estilos para Febrero con mariposas</h3>
+                </a>
             </div>
 
         </main>
@@ -91,7 +102,8 @@
             <div id="red">
                 <img src="Resources/whatsapp.png" alt="">
                 <h3>6105-5884</h3>
-            </div><div id="red">
+            </div>
+            <div id="red">
                 <img src="Resources/instagram.png" alt="">
                 <h3>Year Nails</h3>
             </div>
@@ -101,6 +113,15 @@
             <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
         </div>
     </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
