@@ -380,7 +380,7 @@ body {
 }
 
 /* --------- RESPONSIVE --------- */
-@media (max-width: 768px) {
+@media (max-width: 468px) {
     .container {
         padding: 5px;
     }
