@@ -272,7 +272,7 @@ p {
 }
 
 /* Estilos para tablets */
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 791px) and (min-width: 768px) {
     h4 {
         font-size: 3em;
     }
@@ -310,7 +310,7 @@ p {
 }
 
 /* Estilos para móviles */
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     main h2 {
         margin: 1em;
     }
