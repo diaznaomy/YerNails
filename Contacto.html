@@ -67,6 +67,9 @@
                         <img src="Resources/time.png" alt="">
                         <h3>De 9am a 5pm</h3>
                     </div>
+                    <div id="logo">
+                        <img src="img/Logo.jpg" alt="">
+                    </div>
                 </div>
                 <div id="formulario">
                     <h2>Deseas contactarnos?</h2>
@@ -97,17 +100,49 @@
                             <h3>Como prefieres ser contactado?</h3>
                             <div class="Rd">
                                 <input type="radio" id="contacto_tel" name="preferencia" value="tel">
+                                <img src="Resources/phone-call.png" alt="">
                                 <h3>Teléfono</h3>
-                                <input type="radio" id="contacto_tel" name="preferencia" value="tel">
+                                <input type="radio" id="contacto_email" name="preferencia" value="email">
+                                <img src="Resources/email.png" alt="">
                                 <h3>Correo</h3>
-                                <input type="radio" id="contacto_tel" name="preferencia" value="tel">
+                                <input type="radio" id="contacto_whatsapp" name="preferencia" value="whatsapp">
+                                <img src="Resources/whatsappBlack.png" alt="">
                                 <h3>WhatsApp</h3>
                             </div>
                         </div>
                         <div class="insert">
                             <h3>Mensaje (Opcional)</h3>
-                            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+                            <textarea id="textarea" placeholder="Escribe tu mensaje aquí"></textarea>
                         </div>
+                        <button type="button" id="button" onclick="Enviar()">Enviar</button>
+
+                        <style>
+                            .error-radio {
+                                outline: 2px solid red;
+                            }
+                        </style>
+
+
+                        <script>
+                            function Enviar() {
+                                const nombre = document.getElementById('nombre');
+                                const correo = document.getElementById('correo');
+                                const telefono = document.getElementById('telefono');
+                                const boton = document.querySelector('button');
+                                const input = document.querySelector('input[type="text"]');
+                                const rd = document.querySelector('input[name="preferencia"]:checked');
+                                const mensaje = document.getElementById('textarea');
+
+                                if (nombre.value.trim() === "" || correo.value.trim() === "" || telefono.value.trim() === "" || !rd) {
+                                    alert("Por favor, completa todos los campos obligatorios.");
+                                    return;
+                                }
+
+                                const mensajeCompleto = `Nombre: ${nombre.value}\nCorreo: ${correo.value}\nTeléfono: ${telefono.value}\nMotivo de Contacto: ${document.getElementById('Motivo').value}\nPreferencia de Contacto: ${rd.value}\nMensaje: ${mensaje.value}`;
+
+                                alert("Formulario enviado\n" + "\n"  + mensajeCompleto);
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
