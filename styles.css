@@ -1,20 +1,3 @@
-body {
-    background-color: #f6dae6;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'Abibas';
-    src: url(./Fonts/Abibas.ttf);
-}
-
-@font-face {
-    font-family: 'MedulaOne';
-    src: url(./Fonts/MedulaOne.ttf);
-}
-
 h2 {
     font-family: 'Abibas', sans-serif;
     color: #A55166;
@@ -354,7 +337,7 @@ body {
 .identidad-contenido img {
     width: 300px;
 }
- 
+
 .textos {
     display: flex;
     flex-direction: column;
@@ -399,91 +382,114 @@ body {
 /* --------- RESPONSIVE --------- */
 @media (max-width: 768px) {
     .container {
-        padding: 10px;
+        padding: 5px;
     }
 
     .top {
-        grid-template-columns: 1fr;
+        grid-template-columns: 3, 1fr;
     }
 
-    .presentacion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .top .logo img {
+        width: 15em;
+        margin-left: -1.5em;
     }
 
-    .card-info,
-    .card-img,
-    .card-redes {
-        width: 100%;
-        max-width: 350px;
-        margin-bottom: 15px;
+    .card-info .gradient img {
+        width: 13em;
     }
 
-    .card-info {
-        text-align: center;
-        align-items: center;
+    .card-info .info {
+        width: 12em;
+        height: 10em;
+        margin-top: -5.5em;
+    }
+
+    .card-info h2 {
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    .card-info .subtitulo {
+        font-size: 1.5em;
     }
 
     .card-info button {
+        font-size: 1.3em;
+        padding: 5px 10px;
         align-self: center;
     }
 
+    .lateral-derecha .card-img img {
+        width: 13em;
+    }
+
     .card-redes {
-        background: linear-gradient(to right, #b24d7b, #e6b0cf);
         border-radius: 15px;
         padding: 10px;
         text-align: center;
         color: white;
+        width: 12em;
+        margin-top: -1.4em;
     }
 
     .servicios-lista {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        gap: 0;
+        flex-wrap: wrap;
     }
 
     .servicios-lista .izq li {
-        background: white;
-        font-family: 'medulaone', sans-serif;
         width: 13em;
-        font-size: 30px;
+        font-size: 1.5em;
         border-radius: 15px;
         padding: 10px 15px;
         margin-bottom: 10px;
-        font-weight: bold;
-        color: #6d2245;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
+    .servicios-lista .der {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        margin-left: 16em;
+        margin-top: -11.7em;
+    }
+
     .servicios-lista .der li {
-        background: linear-gradient(to right, #b24d7b, #e6b0cf);
-        font-family: 'medulaone', sans-serif;
-        font-size: 30px;
+        font-size: 1.5em;
         width: 13em;
         margin-left: 0.02em;
         border-radius: 20px;
         padding: 10px 15px;
-        color: white;
         margin-bottom: 10px;
         font-weight: bold;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
 
-    .identidad-contenido {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .identidad-contenido img {
-        width: 120px;
+        width: 16em;
         margin-bottom: 10px;
     }
 
-    .textos>div {
-        width: 100%;
-        max-width: 400px;
-        padding: 15px;
+    .mision, .vision {
+        padding: 10px;
+        border-radius: 15px;
+        width: 18em;
+    }
+
+    .textos h3{
+        font-size: 1.8em;
+    }
+
+    .textos p {
+        font-size: 1.6em;
+    }
+
+    .textos .vision {
+        margin-top: -6em;
     }
 }
 
@@ -556,32 +562,4 @@ body {
         font-size: 1.5em;
         color: #FFFFFF;
     }
-}
-
-@media (max-width: 1024px) {
-    #main {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        margin: 25px 8%;
-    }
-}
-
-@media (max-width: 768px) {
-    #main {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin: 20px 5%;
-    }
-}
-
-@media (max-width: 480px) {
-    #main {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin: 15px 5%;
-    }
-}
-
-@media (min-width: 992px) {
-    
 }
