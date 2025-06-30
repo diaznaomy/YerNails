@@ -317,8 +317,13 @@ p {
 
     .fotoNao img,
     .fotoNey img {
-        width: 8em;
+        width: 10em;
         height: auto;
+    }
+
+    .kuromi,
+    .chococat {
+        width: 5em;
     }
 
     .Nao-card h4,
