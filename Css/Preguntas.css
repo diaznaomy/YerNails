@@ -33,6 +33,7 @@ h3 {
 
 a {
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 /* ------------------- */
@@ -82,6 +83,8 @@ a {
 #navmenu a:hover h3 {
     color: #FFFFFF;
     background-color: #A55166;
+    border-radius: 6px;
+    transform: scale(1.02);
 }
 
 #burger {
@@ -186,7 +189,7 @@ main h2 {
     text-align: center;
 }
 
-.faq-container h4{
+.faq-container h4 {
     font-family: 'medulaone', sans-serif;
     color: #6d2245;
     font-size: 1.4em;
@@ -230,15 +233,18 @@ main h2 {
 
     main h2 {
         margin: 1em;
-        font-size: 1.5em; /* opcional para mejor legibilidad */
+        font-size: 1.5em;
+        /* opcional para mejor legibilidad */
     }
 
     .faq-item p,
     .faq-item ul li {
-        font-size: 1.2em; /* ajusta tamaño de texto en móvil */
+        font-size: 1.2em;
+        /* ajusta tamaño de texto en móvil */
     }
 
     .faq-item img {
-        width: 15em; /* opcional para evitar que ocupe toda la pantalla */
+        width: 15em;
+        /* opcional para evitar que ocupe toda la pantalla */
     }
 }

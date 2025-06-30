@@ -33,6 +33,7 @@ h3 {
 
 a {
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 /* ------------------- */
@@ -82,6 +83,8 @@ a {
 #navmenu a:hover h3 {
     color: #FFFFFF;
     background-color: #A55166;
+    border-radius: 6px;
+    transform: scale(1.02);
 }
 
 #burger {
@@ -236,7 +239,7 @@ section {
     margin-bottom: -1.7em;
 }
 
-.valores-grid ul{
+.valores-grid ul {
     margin-top: 2em;
 }
 
