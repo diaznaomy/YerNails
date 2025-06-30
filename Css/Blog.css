@@ -283,7 +283,7 @@ select option {
         border-right: #FFFFFF 1px solid;
     }
 
-    #Ubicación {
+    #Ubicacion {
         flex: 1;
         display: flex;
         justify-content: center;
@@ -367,7 +367,21 @@ select option {
         margin-left: 0px;
     }
 
+    #Footer{
+        
+        #Ubicacion {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 
+            h2{
+                font-size: 1.2em;
+            }
+            h3{
+                font-size: 1em;
+            }
+        }
+    }
 
     #Combo {
         flex-direction: column;
@@ -389,13 +403,5 @@ select option {
 
     #ComboBox #Logo {
         display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    #main {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin: 15px 5%;
     }
 }
