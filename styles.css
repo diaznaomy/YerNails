@@ -380,7 +380,7 @@ body {
 }
 
 /* --------- RESPONSIVE --------- */
-@media (max-width: 468px) {
+@media (max-width: 768px) {
     .container {
         padding: 5px;
     }
@@ -390,37 +390,54 @@ body {
     }
 
     .top .logo img {
-        width: 15em;
+        width: 10em;
         margin-left: -1.5em;
     }
 
+    .card-info {
+        margin-left: -10em;
+    }
+
     .card-info .gradient img {
-        width: 13em;
+        width: 10em;
     }
 
     .card-info .info {
-        width: 12em;
-        height: 10em;
-        margin-top: -5.5em;
+        width: 9em;
+        height: 8em;
+        margin-top: -6em;
     }
 
     .card-info h2 {
-        font-size: 1.2em;
+        font-size: 1em;
         text-align: left;
     }
 
     .card-info .subtitulo {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .card-info button {
-        font-size: 1.3em;
+        font-size: 1em;
         padding: 5px 10px;
         align-self: center;
     }
 
+    .lateral-derecha {
+        margin-left: -9em;
+        margin-top: -1.8em;
+    }
+
     .lateral-derecha .card-img img {
-        width: 13em;
+        width: 10em;
+    }
+
+    .lateral-derecha p{
+        font-size: 1.2em;   
+    }
+
+    .lateral-derecha .iconos img {
+        width: 2em;
     }
 
     .card-redes {
@@ -428,7 +445,7 @@ body {
         padding: 10px;
         text-align: center;
         color: white;
-        width: 12em;
+        width: 9em;
         margin-top: -1.4em;
     }
 
