@@ -522,7 +522,7 @@ body {
 
     .top .logo img {
         width: 9em;
-        margin-left: -0.5em;
+        margin-left: -1.2em;
     }
 
     .card-info {
@@ -549,7 +549,7 @@ body {
     }
 
     .card-info button {
-        font-size: 0.8em;
+        font-size: 0.6em;
         padding: 5px 10px;
         align-self: center;
     }
@@ -589,8 +589,8 @@ body {
     }
 
     .servicios-lista .izq li {
-        width: 13em;
-        font-size: 1.5em;
+        width: 8em;
+        font-size: 1em;
         border-radius: 15px;
         padding: 10px 15px;
         margin-bottom: 10px;
@@ -601,13 +601,13 @@ body {
         display: flex;
         flex-direction: column;
         align-items: right;
-        margin-left: 16em;
-        margin-top: -11.7em;
+        margin-left: 7em;
+        margin-top: -9.6em;
     }
 
     .servicios-lista .der li {
-        font-size: 1.5em;
-        width: 13em;
+        font-size: 1em;
+        width: 11em;
         margin-left: 0.02em;
         border-radius: 20px;
         padding: 10px 15px;
