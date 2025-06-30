@@ -301,9 +301,7 @@ section {
 }
 
 video {
-    margin: 1em auto;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin: 2em 1em 1em 1em;
     border-radius: 2em;
 }
 

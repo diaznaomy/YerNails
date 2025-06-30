@@ -387,57 +387,58 @@ body {
 
     .top {
         grid-template-columns: 3, 1fr;
+        align-items: center;
     }
 
     .top .logo img {
-        width: 10em;
-        margin-left: -1.5em;
+        width: 14em;
+        margin-left: -0.5em;
     }
 
     .card-info {
-        margin-left: -3em;
+        margin-left: -5.5em;
     }
 
     .card-info .gradient img {
-        width: 10em;
+        width: 11em;
     }
 
     .card-info .info {
-        width: 9em;
-        height: 8em;
+        width: 10em;
+        height: 11.2em;
         margin-top: -6em;
     }
 
     .card-info h2 {
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: left;
     }
 
     .card-info .subtitulo {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 
     .card-info button {
-        font-size: 1em;
+        font-size: 1.2em;
         padding: 5px 10px;
         align-self: center;
     }
 
     .lateral-derecha {
-        margin-left: -1em;
-        margin-top: -1.8em;
+        margin-left: -3.5em;
+        margin-top: -2em;
     }
 
     .lateral-derecha .card-img img {
-        width: 10em;
+        width: 13em;
     }
 
     .lateral-derecha p{
-        font-size: 1.2em;   
+        font-size: 1.5em;   
     }
 
     .lateral-derecha .iconos img {
-        width: 2em;
+        width: 2.5em;
     }
 
     .card-redes {
@@ -445,8 +446,7 @@ body {
         padding: 10px;
         text-align: center;
         color: white;
-        width: 9em;
-        margin-top: -1.4em;
+        width: 11.8em;
     }
 
     .servicios-lista {
