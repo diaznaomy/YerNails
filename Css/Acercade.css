@@ -252,30 +252,44 @@ p {
     }
 }
 
+/* Ocultar kuromi y chococat en móviles y tablet */
+@media (max-width: 791px) {
+    .kuromi,
+    .chococat {
+        display: none;
+    }
+}
+
 /* Estilos para tablets */
 @media (max-width: 791px) and (min-width: 768px) {
     h4 {
         font-size: 3em;
+        text-align: center;
     }
 
     h5 {
         font-size: 1.5em;
+        text-align: center;
     }
 
     p {
         font-size: 1.3em;
-        margin: 0 2em;
+        margin: 1em 2em;
+        text-align: justify;
     }
 
     .fotoNao,
     .fotoNey {
         max-width: 18em;
-        margin: 2em auto;
-        display: block;
+        margin: 1em auto;
+        display: flex;
+        justify-content: center;
     }
 
-    .fotoNey {
-        margin-top: 1em;
+    .fotoNao img,
+    .fotoNey img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -283,6 +297,7 @@ p {
 @media (max-width: 480px) {
     main h2 {
         margin: 1em;
+        text-align: center;
     }
 
     .Nao-card,
@@ -296,7 +311,8 @@ p {
     .fotoNao,
     .fotoNey {
         margin: 1em auto;
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     .fotoNao img,
