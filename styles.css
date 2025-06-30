@@ -426,7 +426,7 @@ body {
 
     .lateral-derecha {
         margin-left: -3.5em;
-        margin-top: -2em;
+        margin-top: -2.5em;
     }
 
     .lateral-derecha .card-img img {
@@ -447,6 +447,137 @@ body {
         text-align: center;
         color: white;
         width: 11.8em;
+    }
+
+    .servicios-lista {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .servicios-lista .izq li {
+        width: 13em;
+        font-size: 1.5em;
+        border-radius: 15px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .servicios-lista .der {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        margin-left: 16em;
+        margin-top: -11.7em;
+    }
+
+    .servicios-lista .der li {
+        font-size: 1.5em;
+        width: 13em;
+        margin-left: 0.02em;
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+
+    .identidad-contenido img {
+        width: 16em;
+        margin-bottom: 10px;
+    }
+
+    .mision, .vision {
+        padding: 10px;
+        border-radius: 15px;
+        width: 18em;
+    }
+
+    .textos h3{
+        font-size: 1.8em;
+    }
+
+    .textos p {
+        font-size: 1.6em;
+    }
+
+    .textos .vision {
+        margin-top: -6em;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        padding: 2px;
+    }
+
+    .top {
+        grid-template-columns: 3, 1fr;
+        align-items: center;
+    }
+
+    .top .logo img {
+        width: 9em;
+        margin-left: -0.5em;
+    }
+
+    .card-info {
+        margin-left: -0.4em;
+    }
+
+    .card-info .gradient img {
+        width: 8em;
+    }
+
+    .card-info .info {
+        width: 7em;
+        height: 7em;
+        margin-top: -4em;
+    }
+
+    .card-info h2 {
+        font-size: 0.6em;
+        text-align: left;
+    }
+
+    .card-info .subtitulo {
+        font-size: 0.8em;
+    }
+
+    .card-info button {
+        font-size: 0.8em;
+        padding: 5px 10px;
+        align-self: center;
+    }
+
+    .lateral-derecha {
+        margin-left: -1em;
+        margin-top: -1.3em;
+    }
+
+    .lateral-derecha .card-img img {
+        width: 8em;
+    }
+
+    .lateral-derecha p{
+        font-size: 1em;   
+    }
+
+    .lateral-derecha .iconos img {
+        width: 1em;
+    }
+
+    .card-redes {
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        width: 7em;
+        margin-left: 0.6em;
     }
 
     .servicios-lista {
