@@ -1,24 +1,6 @@
 /* ------------------- */
 /* No cambiar nada */
 /* ------------------- */
-
-body {
-    background-color: #f6dae6;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'Abibas';
-    src: url(../Fonts/Abibas.ttf);
-}
-
-@font-face {
-    font-family: 'MedulaOne';
-    src: url(../Fonts/MedulaOne.ttf);
-}
-
 h2 {
     font-family: 'Abibas', sans-serif;
     color: #A55166;
